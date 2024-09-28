@@ -1,7 +1,8 @@
 {
   "scripts": {
-    "dev": "vuepress dev src",
-    "build": "vuepress build src"
+    "dev": "yarn create:news && vuepress dev src",
+    "build": "yarn create:news && vuepress build src",
+    "create:news": "node src/scripts/createArticles.js"
   },
   "devDependencies": {
     "vuepress": "^1.9.10"

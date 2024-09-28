@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <RouterLink :to="`article/${id}`">
     <h1>{{ title }}</h1>
     <dl>
       <dt>{{ newsFrom }}</dt>
@@ -16,11 +16,15 @@
     >
       <img :src="img" alt="多张图片" />
     </picture>
-  </div>
+  </RouterLink>
 </template>
 <script>
   export default {
     props: {
+      id: {
+        type: String,
+        required: true,
+      },
       title: {
         type: String,
         required: true,

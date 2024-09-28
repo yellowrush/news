@@ -1,5 +1,6 @@
-export const data = [
+module.exports = [
   {
+    id: '001',
     title: '北京市纪委监委通报：3 人被查！',
     newsFrom: '北京市纪委监委通报：3 人被查！',
     commentsCount: 12,
@@ -7,6 +8,7 @@ export const data = [
     image: 'https://picsum.photos/500/300',
   },
   {
+    id: '002',
     title: '北京市纪委监委通报：3 人被查！',
     newsFrom: '北京市纪委监委通报：3 人被查！',
     commentsCount: 12,
@@ -14,6 +16,7 @@ export const data = [
     image: 'https://picsum.photos/200/300',
   },
   {
+    id: '003',
     title: '北京市纪委监委通报：3 人被查！',
     newsFrom: '北京市纪委监委通报：3 人被查！',
     commentsCount: 12,
@@ -21,6 +24,7 @@ export const data = [
     image: 'https://picsum.photos/200/300',
   },
   {
+    id: '004',
     title: '北京市纪委监委通报：3 人被查！',
     newsFrom: '北京市纪委监委通报：3 人被查！',
     commentsCount: 12,
@@ -28,6 +32,7 @@ export const data = [
     image: 'https://picsum.photos/200/300',
   },
   {
+    id: '005',
     title: '北京市纪委监委通报：3 人被查！',
     newsFrom: '北京市纪委监委通报：3 人被查！',
     commentsCount: 12,
@@ -35,6 +40,7 @@ export const data = [
     image: 'https://picsum.photos/200/300',
   },
   {
+    id: '006',
     title: '北京市纪委监委通报：3 人被查！',
     newsFrom: '北京市纪委监委通报：3 人被查！',
     commentsCount: 12,
@@ -42,6 +48,7 @@ export const data = [
     image: 'https://picsum.photos/200/300',
   },
   {
+    id: '007',
     title: '北京市纪委监委通报：3 人被查！',
     newsFrom: '北京市纪委监委通报：3 人被查！',
     commentsCount: 12,
@@ -49,6 +56,7 @@ export const data = [
     image: 'https://picsum.photos/200/300',
   },
   {
+    id: '008',
     title: '北京市纪委监委通报：3 人被查！',
     newsFrom: '北京市纪委监委通报：3 人被查！',
     commentsCount: 12,
@@ -56,6 +64,7 @@ export const data = [
     image: 'https://picsum.photos/200/300',
   },
   {
+    id: '009',
     title: '北京市纪委监委通报：3 人被查！',
     newsFrom: '北京市纪委监委通报：3 人被查！',
     commentsCount: 12,
@@ -63,6 +72,7 @@ export const data = [
     image: 'https://picsum.photos/200/300',
   },
   {
+    id: '010',
     title: '北京市纪委监委通报：3 人被查！',
     newsFrom: '北京市纪委监委通报：3 人被查！',
     commentsCount: 12,
@@ -70,6 +80,7 @@ export const data = [
     image: 'https://picsum.photos/200/300',
   },
   {
+    id: '011',
     title: '北京市纪委监委通报：3 人被查！',
     newsFrom: '北京市纪委监委通报：3 人被查！',
     commentsCount: 12,
@@ -77,6 +88,7 @@ export const data = [
     image: 'https://picsum.photos/200/300',
   },
   {
+    id: '012',
     title: '北京市纪委监委通报：3 人被查！',
     newsFrom: '北京市纪委监委通报：3 人被查！',
     commentsCount: 12,
