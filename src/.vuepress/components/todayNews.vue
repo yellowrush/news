@@ -32,6 +32,7 @@
     span {
       font-size: 1rem;
       font-weight: normal;
+      color: #999;
     }
   }
 </style>

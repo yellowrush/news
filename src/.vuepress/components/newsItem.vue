@@ -1,5 +1,5 @@
 <template>
-  <RouterLink :to="`article/${id}`">
+  <RouterLink class="article" :to="`article/${id}`">
     <h1>{{ title }}</h1>
     <dl>
       <dt>{{ newsFrom }}</dt>
@@ -52,3 +52,13 @@
     },
   };
 </script>
+
+<style scoped>
+  .article {
+    padding: 16px;
+  }
+  h1 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+</style>
