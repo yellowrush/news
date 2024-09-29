@@ -5,15 +5,7 @@ module.exports = {
   title,
   description,
   themeConfig: {
-    nav: [
-      { text: '关注', link: '/1' },
-      { text: '推荐', link: '/2' },
-      {
-        text: '北京',
-        link: '/3',
-        items: [{ text: 'test', link: '/5' }],
-      },
-    ],
+    nav: [],
   },
   markdown: {
     externalLinks: {

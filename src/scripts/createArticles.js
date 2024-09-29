@@ -1,5 +1,8 @@
 const fs = require('node:fs');
-const data = require('../db/index');
+const news = require('../db/index');
+const todayNews = require('../db/todayNews');
+
+const data = [].concat(news).concat(todayNews);
 
 if (data.length > 0) {
   for (let i = 0; i < data.length; i++) {
@@ -8,7 +11,7 @@ if (data.length > 0) {
   :id="'${data[i].id}'"
   :title="'${data[i].title}'"
   :news-from="'${data[i].newsFrom}'"
-  :comments-count="'${data[i].commentsCount}'"
+  :comments-count="${data[i].commentsCount}"
   :date="'${data[i].date}'"
   :image="'${data[i].image}'"
 />

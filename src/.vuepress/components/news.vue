@@ -1,7 +1,11 @@
+<script setup>
+  import newsItem from './newsItem.vue';
+  import data from '../../db/index.js';
+</script>
 <template>
   <div>
     <newsItem
-      v-for="(newItem, index) in news"
+      v-for="(newItem, index) in data"
       :key="index"
       :id="newItem.id"
       :title="newItem.title"
@@ -12,17 +16,3 @@
     />
   </div>
 </template>
-<script>
-  import newsItem from './newsItem.vue';
-  import data from '../../db/index.js';
-  export default {
-    components: {
-      newsItem,
-    },
-    data() {
-      return {
-        news: data,
-      };
-    },
-  };
-</script>

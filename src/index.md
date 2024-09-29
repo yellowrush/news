@@ -1,1 +1,3 @@
+<todayNews />
+
 <news />

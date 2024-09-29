@@ -1,0 +1,42 @@
+module.exports = [
+  {
+    id: '015',
+    title: '习近平在国家勋章和国家荣誉称号颁授仪式上发表重要讲话',
+    newsFrom: 'CCTV',
+    commentsCount: 12,
+    date: new Date(),
+    image: 'https://picsum.photos/500/300',
+  },
+  {
+    id: '016',
+    title: '北京市纪委监委通报：3 人被查！',
+    newsFrom: 'CCTV',
+    commentsCount: 12,
+    date: new Date(),
+    image: 'https://picsum.photos/200/300',
+  },
+  {
+    id: '017',
+    title: '北京市纪委监委通报：3 人被查！',
+    newsFrom: 'CCTV',
+    commentsCount: 12,
+    date: new Date(),
+    image: 'https://picsum.photos/200/300',
+  },
+  {
+    id: '018',
+    title: '北京市纪委监委通报：3 人被查！',
+    newsFrom: 'CCTV',
+    commentsCount: 12,
+    date: new Date(),
+    image: 'https://picsum.photos/200/300',
+  },
+  {
+    id: '019',
+    title: '北京市纪委监委通报：3 人被查！',
+    newsFrom: 'CCTV',
+    commentsCount: 12,
+    date: new Date(),
+    image: 'https://picsum.photos/200/300',
+  },
+];
