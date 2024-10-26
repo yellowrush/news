@@ -1,22 +1,22 @@
 <template>
-  <RouterLink class="article" :to="`article/${id}`">
-    <h1>{{ title }}</h1>
-    <dl>
-      <dt>{{ newsFrom }}</dt>
-      <dd>{{ commentsCount }}</dd>
-      <dd>{{ date }}</dd>
-    </dl>
-    <picture v-if="image">
+  <div class="article">
+    <div class="article-content">
+      <RouterLink :to="`article/${id}`">{{ title }}</RouterLink>
+      <div class="images" v-if="images.length > 0">
+        <picture v-for="(img, index) in images" :key="index">
+          <img :src="img" alt="多张图片" />
+        </picture>
+      </div>
+      <dl>
+        <dt>{{ newsFrom }}</dt>
+        <dd>{{ commentsCount }}评论</dd>
+        <dd>{{ date }}</dd>
+      </dl>
+    </div>
+    <picture v-if="!!image">
       <img :src="image" alt="单张图片" />
     </picture>
-    <picture
-      v-if="images.length > 0"
-      v-for="(img, index) in images"
-      :key="index"
-    >
-      <img :src="img" alt="多张图片" />
-    </picture>
-  </RouterLink>
+  </div>
 </template>
 <script>
   export default {
@@ -56,9 +56,50 @@
 <style scoped>
   .article {
     padding: 16px;
+    display: flex;
+    min-height: 104px;
   }
-  h1 {
-    margin: 0;
-    font-size: 1.8rem;
+  .article-content {
+    flex-grow: 1;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    a {
+      margin: 0;
+      font-size: 1.2rem;
+      &:hover {
+        color: #ff403a;
+      }
+    }
+    dl {
+      margin: 0;
+      display: flex;
+    }
+    .images {
+      display: flex;
+      width: 100%;
+      margin: 10px 0;
+      gap: 14px;
+      picture {
+        flex-shrink: 1;
+        width: 25%;
+      }
+    }
+  }
+  picture {
+    flex-shrink: 0;
+    width: 11rem;
+    overflow: hidden;
+    border-radius: 6px;
+    height: 104px;
+    img {
+      width: 100%;
+      height: 100%;
+      transition: all 0.5s ease 0.1s;
+      &:hover {
+        transform: scale(1.04);
+      }
+    }
   }
 </style>

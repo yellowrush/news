@@ -2,7 +2,7 @@ module.exports = [
   {
     id: '001',
     title: '北京市纪委监委通报：3 人被查！',
-    newsFrom: '北京市纪委监委通报：3 人被查！',
+    newsFrom: 'CCTV',
     commentsCount: 12,
     date: '5 小时前',
     image: 'https://picsum.photos/500/300',
@@ -10,15 +10,20 @@ module.exports = [
   {
     id: '002',
     title: '北京市纪委监委通报：3 人被查！',
-    newsFrom: '北京市纪委监委通报：3 人被查！',
+    newsFrom: 'CCTV',
     commentsCount: 12,
     date: '5 小时前',
-    image: 'https://picsum.photos/200/300',
+    images: [
+      'https://picsum.photos/200/300',
+      'https://picsum.photos/200/300',
+      'https://picsum.photos/200/300',
+      'https://picsum.photos/200/300',
+    ],
   },
   {
     id: '003',
     title: '北京市纪委监委通报：3 人被查！',
-    newsFrom: '北京市纪委监委通报：3 人被查！',
+    newsFrom: 'CCTV',
     commentsCount: 12,
     date: '5 小时前',
     image: 'https://picsum.photos/200/300',
@@ -26,7 +31,7 @@ module.exports = [
   {
     id: '004',
     title: '北京市纪委监委通报：3 人被查！',
-    newsFrom: '北京市纪委监委通报：3 人被查！',
+    newsFrom: 'CCTV',
     commentsCount: 12,
     date: '5 小时前',
     image: 'https://picsum.photos/200/300',
@@ -34,7 +39,7 @@ module.exports = [
   {
     id: '005',
     title: '北京市纪委监委通报：3 人被查！',
-    newsFrom: '北京市纪委监委通报：3 人被查！',
+    newsFrom: 'CCTV',
     commentsCount: 12,
     date: '5 小时前',
     image: 'https://picsum.photos/200/300',
@@ -42,7 +47,7 @@ module.exports = [
   {
     id: '006',
     title: '北京市纪委监委通报：3 人被查！',
-    newsFrom: '北京市纪委监委通报：3 人被查！',
+    newsFrom: 'CCTV',
     commentsCount: 12,
     date: '5 小时前',
     image: 'https://picsum.photos/200/300',
@@ -50,7 +55,7 @@ module.exports = [
   {
     id: '007',
     title: '北京市纪委监委通报：3 人被查！',
-    newsFrom: '北京市纪委监委通报：3 人被查！',
+    newsFrom: 'CCTV',
     commentsCount: 12,
     date: '5 小时前',
     image: 'https://picsum.photos/200/300',
@@ -58,7 +63,7 @@ module.exports = [
   {
     id: '008',
     title: '北京市纪委监委通报：3 人被查！',
-    newsFrom: '北京市纪委监委通报：3 人被查！',
+    newsFrom: 'CCTV',
     commentsCount: 12,
     date: '5 小时前',
     image: 'https://picsum.photos/200/300',
@@ -66,7 +71,7 @@ module.exports = [
   {
     id: '009',
     title: '北京市纪委监委通报：3 人被查！',
-    newsFrom: '北京市纪委监委通报：3 人被查！',
+    newsFrom: '新华社',
     commentsCount: 12,
     date: '5 小时前',
     image: 'https://picsum.photos/200/300',
@@ -74,7 +79,7 @@ module.exports = [
   {
     id: '010',
     title: '北京市纪委监委通报：3 人被查！',
-    newsFrom: '北京市纪委监委通报：3 人被查！',
+    newsFrom: '新华社',
     commentsCount: 12,
     date: '5 小时前',
     image: 'https://picsum.photos/200/300',
@@ -82,7 +87,7 @@ module.exports = [
   {
     id: '011',
     title: '北京市纪委监委通报：3 人被查！',
-    newsFrom: '北京市纪委监委通报：3 人被查！',
+    newsFrom: '新华社',
     commentsCount: 12,
     date: '5 小时前',
     image: 'https://picsum.photos/200/300',
@@ -90,7 +95,7 @@ module.exports = [
   {
     id: '012',
     title: '北京市纪委监委通报：3 人被查！',
-    newsFrom: '北京市纪委监委通报：3 人被查！',
+    newsFrom: '新华社',
     commentsCount: 12,
     date: '5 小时前',
     image: 'https://picsum.photos/200/300',

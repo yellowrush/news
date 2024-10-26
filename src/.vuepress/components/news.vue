@@ -13,6 +13,13 @@
       :comments-count="newItem.commentsCount"
       :date="newItem.date"
       :image="newItem.image"
+      :images="newItem.images"
+      class="new-item"
     />
   </div>
 </template>
+<style scoped>
+  .new-item {
+    margin-top: 1.2rem;
+  }
+</style>

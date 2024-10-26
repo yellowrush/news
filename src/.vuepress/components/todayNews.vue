@@ -4,9 +4,17 @@
 <template>
   <section class="today-news">
     <h3>
-      🔥今日要闻 <span>{{ new Date() }}</span>
+      🔥今日要闻
+      <span>{{
+        new Date().toLocaleDateString('zh-CN', {
+          weekday: 'long',
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+        })
+      }}</span>
     </h3>
-    <ul>
+    <ul class="news-list">
       <li v-for="(newItem, index) in data" :key="index">
         <RouterLink :to="`article/${newItem.id}`">
           {{ newItem.title }}
@@ -28,6 +36,17 @@
       #fff;
     h3 {
       margin: 0;
+      font-size: 1.2rem;
+    }
+    .news-list {
+      li::marker {
+        color: #999;
+      }
+      li {
+        a:hover {
+          color: #ff403a;
+        }
+      }
     }
     span {
       font-size: 1rem;
