@@ -7,12 +7,14 @@ const data = [].concat(news).concat(todayNews);
 if (data.length > 0) {
   for (let i = 0; i < data.length; i++) {
     const image = data[i].image ?? '';
-    const images = data[i].images?.map((img) => `'${img}'`);
+    const images = data[i].images;
 
     const content = `
 <newsItem
   :comments-count="${data[i].commentsCount}"
-  :images="[${images}]"
+  :images="${
+    images ? '[' + images.map((img) => "'" + img + "'") + ']' : undefined
+  }"
   id="${data[i].id}"
   title="${data[i].title}"
   news-from="${data[i].newsFrom}"
