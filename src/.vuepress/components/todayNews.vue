@@ -4,7 +4,7 @@
 <template>
   <section class="today-news">
     <h3>
-      🔥今日要闻
+      📅今日要闻
       <span>{{
         new Date().toLocaleDateString('zh-CN', {
           weekday: 'long',
@@ -16,7 +16,7 @@
     </h3>
     <ul class="news-list">
       <li v-for="(newItem, index) in data" :key="index">
-        <RouterLink :to="`article/${newItem.id}`">
+        <RouterLink :to="`articles/${newItem.id}`">
           {{ newItem.title }}
         </RouterLink>
       </li>

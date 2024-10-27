@@ -1,7 +1,7 @@
 <template>
   <div class="article">
     <div class="article-content">
-      <RouterLink :to="`article/${id}`">{{ title }}</RouterLink>
+      <RouterLink :to="`articles/${id}`">{{ title }}</RouterLink>
       <div class="images" v-if="images && images.length > 0">
         <picture v-for="(img, index) in images" :key="index">
           <img :src="img" alt="多张图片" />

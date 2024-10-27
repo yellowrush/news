@@ -1,0 +1,42 @@
+module.exports = [
+  {
+    id: '020',
+    title: '习近平对民政工作作出重要指示',
+    newsFrom: 'CCTV',
+    commentsCount: 12,
+    date: new Date(),
+    image: 'https://picsum.photos/500/300',
+  },
+  {
+    id: '016',
+    title: '外交部回应美国近20亿美元对台军售',
+    newsFrom: 'CCTV',
+    commentsCount: 12,
+    date: new Date(),
+    image: 'https://picsum.photos/200/300',
+  },
+  {
+    id: '017',
+    title: '北京市纪委监委通报：3 人被查！',
+    newsFrom: 'CCTV',
+    commentsCount: 12,
+    date: new Date(),
+    image: 'https://picsum.photos/200/300',
+  },
+  {
+    id: '018',
+    title: '北京市纪委监委通报：3 人被查！',
+    newsFrom: 'CCTV',
+    commentsCount: 12,
+    date: new Date(),
+    image: 'https://picsum.photos/200/300',
+  },
+  {
+    id: '019',
+    title: '北京市纪委监委通报：3 人被查！',
+    newsFrom: 'CCTV',
+    commentsCount: 12,
+    date: new Date(),
+    image: 'https://picsum.photos/200/300',
+  },
+];

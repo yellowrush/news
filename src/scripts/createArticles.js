@@ -20,7 +20,7 @@ if (data.length > 0) {
   image="${image}"
 />
 `;
-    fs.writeFile(`src/article/${data[i].id}.md`, content, (err) => {
+    fs.writeFile(`src/articles/${data[i].id}.md`, content, (err) => {
       if (err) {
         console.error(err);
       } else {
