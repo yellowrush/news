@@ -9,17 +9,20 @@ if (data.length > 0) {
     const image = data[i].image ?? '';
     const images = data[i].images;
 
-    const content = `
-<newsItem
+    const content = `<newsDetail
   :comments-count="${data[i].commentsCount}"
+  :like-count="${data[i].likeCount}"
+  :liked="${data[i].liked}"
   :images="${
     images ? '[' + images.map((img) => "'" + img + "'") + ']' : undefined
   }"
   id="${data[i].id}"
   title="${data[i].title}"
+  sub-title="${data[i].subTitle}"
   news-from="${data[i].newsFrom}"
   date="${data[i].date}"
   image="${image}"
+  :article-content="'${data[i].articleContent?.replace(/"/g, "'")}'"
 />
 `;
     fs.writeFile(`src/articles/${data[i].id}.md`, content, (err) => {
