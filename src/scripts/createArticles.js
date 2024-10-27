@@ -6,14 +6,18 @@ const data = [].concat(news).concat(todayNews);
 
 if (data.length > 0) {
   for (let i = 0; i < data.length; i++) {
+    const image = data[i].image ?? '';
+    const images = data[i].images?.map((img) => `'${img}'`);
+
     const content = `
 <newsItem
-  :id="'${data[i].id}'"
-  :title="'${data[i].title}'"
-  :news-from="'${data[i].newsFrom}'"
   :comments-count="${data[i].commentsCount}"
-  :date="'${data[i].date}'"
-  :image="'${data[i].image}'"
+  :images="[${images}]"
+  id="${data[i].id}"
+  title="${data[i].title}"
+  news-from="${data[i].newsFrom}"
+  date="${data[i].date}"
+  image="${image}"
 />
 `;
     fs.writeFile(`src/article/${data[i].id}.md`, content, (err) => {
