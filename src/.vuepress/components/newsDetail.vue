@@ -2,7 +2,7 @@
   <div class="article">
     <div class="sidebar-left">
       <div tabindex="0" role="button" class="button like">
-        <button>
+        <button @click="liked = true">
           <img v-if="liked" src="../../assets/images/liked.svg" />
           <img v-else src="../../assets/images/like.svg" />
         </button>
