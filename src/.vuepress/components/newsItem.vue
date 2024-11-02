@@ -14,7 +14,7 @@
       </dl>
     </div>
     <picture v-if="!!image">
-      <img :src="image" alt="单张图片" />
+      <img :src="image" alt="" />
     </picture>
   </div>
 </template>

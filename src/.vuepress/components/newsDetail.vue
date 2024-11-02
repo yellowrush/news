@@ -6,9 +6,14 @@
           <img v-if="liked" src="../../assets/images/liked.svg" />
           <img v-else src="../../assets/images/like.svg" />
         </button>
-        <span>7</span>
+        <span>{{ likeCount }}</span>
       </div>
-      <div tabindex="0" role="button" class="button">
+      <div
+        tabindex="0"
+        role="button"
+        class="button"
+        @click="isCommentsShow = true"
+      >
         <button>
           <img src="../../assets/images/comment.svg" />
         </button>
@@ -37,9 +42,15 @@
       <article v-html="articleContent" />
     </section>
     <div class="sidebar-right"></div>
+    <comments
+      :comments-count="commentsCount"
+      v-if="isCommentsShow"
+      @close="isCommentsShow = false"
+    />
   </div>
 </template>
 <script>
+  import comments from './comments.vue';
   export default {
     props: {
       id: {
@@ -82,6 +93,14 @@
         type: String,
         required: true,
       },
+    },
+    components: {
+      comments,
+    },
+    data() {
+      return {
+        isCommentsShow: false,
+      };
     },
   };
 </script>
