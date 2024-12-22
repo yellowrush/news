@@ -107,16 +107,26 @@
 
 <style scoped>
   .article {
-    padding: 16px;
+    padding: 16px 16px 16px 50px;
     display: flex;
     position: relative;
   }
   .sidebar-left {
     position: fixed;
     top: 170px;
-    left: calc(50% - 400px - 40px);
+    left: 330px;
     margin: 1rem;
     z-index: 199;
+  }
+  @media screen and (max-width: 768px) {
+    .sidebar-left {
+      left: 230px;
+    }
+  }
+  @media screen and (max-width: 728px) {
+    .sidebar-left {
+      left: 0;
+    }
   }
   button {
     display: flex;

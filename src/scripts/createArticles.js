@@ -9,7 +9,11 @@ if (data.length > 0) {
     const image = data[i].image ?? '';
     const images = data[i].images;
 
-    const content = `<newsDetail
+    const content = `---
+sidebar: auto
+---
+
+<newsDetail
   :comments-count="${data[i].commentsCount}"
   :like-count="${data[i].likeCount}"
   :liked="${data[i].liked}"

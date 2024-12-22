@@ -6,6 +6,7 @@ module.exports = {
   description,
   themeConfig: {
     nav: [],
+    sidebar: 'auto',
   },
   markdown: {
     externalLinks: {
